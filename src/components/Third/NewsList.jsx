@@ -50,7 +50,6 @@ const NewsList = () => {
                 <NewsLink href={article.url} target="_blank" rel="noopener noreferrer">
                   <NewsImage 
                     src={article.urlToImage} 
-                    alt={article.title} 
                     onError={(e) => e.target.src = 'https://via.placeholder.com/100'} 
                   />
                   <span>{article.title}</span>
