@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+`;
+
 export const StyledParagraph = styled.div`
   color: #ffffff;
   font-size: 30px;
@@ -7,7 +15,7 @@ export const StyledParagraph = styled.div`
   margin-top: 20px;
   padding: 20px;
   border: 1px solid white;
-  width: 1500px;
+  width: 100%;
   display: flex;
   /* justify-content: space-around; */
 
@@ -23,18 +31,22 @@ export const NewsListContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
 `;
 
 export const NewsListItem = styled.li`
   margin-bottom: 20px;
   text-align: left;
-  /* width: 80%; */
-  width: 1500px;
+  width: 100%;
 `;
 
 export const NewsLink = styled.a`
   display: flex;
-  /* align-items: center; */
+
   text-decoration: none;
   color: inherit;
   padding-bottom: 30px;
@@ -47,4 +59,5 @@ export const NewsImage = styled.img`
   height: 150px;
   object-fit: cover;
   margin-right: 10px;
+  flex-shrink: 0;
 `;
