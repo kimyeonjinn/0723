@@ -67,3 +67,5 @@ const NewsList = () => {
 };
 
 export default NewsList;
+
+//뉴스 리스트 api 과제 제출
